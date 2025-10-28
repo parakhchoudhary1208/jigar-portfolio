@@ -43,7 +43,7 @@ export default function ContactSection() {
         heading="Get In Touch"
         content={
           <>
-            Please contact me directly at{' '}
+            Please contact me directly at{" "}
             <Button
               variant="link"
               className="text-muted-foreground hover:text-foreground h-fit p-0 font-medium underline transition-colors"
@@ -52,12 +52,50 @@ export default function ContactSection() {
               <Link href={siteConfig.links.mailTo}>
                 {siteConfig.contact.email}
               </Link>
-            </Button>{' '}
+            </Button>{" "}
             or through this form.
           </>
         }
       />
       {/* <ContactForm /> */}
+      <motion.div
+        initial={{ opacity: 0, y: 100 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{
+          delay: 0.1,
+          ease: "easeOut",
+        }}
+        className="flex flex-row gap-2 items-center justify-center"
+      >
+        <Button asChild size="lg">
+          <Link href={siteConfig.links.mailTo}>
+            Get in touch <Icons.arrowRight className="ml-2 size-4" />
+          </Link>
+        </Button>
+        <Button variant="outline" size="lg" className="hidden sm:flex" asChild>
+          <a href={siteConfig.links.cvPdf} download>
+            Download CV <Icons.download className="ml-2 size-4" />
+          </a>
+        </Button>
+        <Button variant="outline" size="icon" asChild>
+          <Link
+            href={siteConfig.links.linkedin}
+            aria-label="Linkedin"
+            target="_blank"
+          >
+            <Icons.linkedin className="size-5" />
+          </Link>
+        </Button>
+        {/* <Button variant="outline" size="icon" asChild>
+          <Link
+            href={siteConfig.links.github}
+            aria-label="Github"
+            target="_blank"
+          >
+            <Icons.github className="size-5" />
+          </Link>
+        </Button> */}
+      </motion.div>
     </motion.section>
-  )
+  );
 }

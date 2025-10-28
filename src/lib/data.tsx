@@ -14,13 +14,13 @@ export const navLinks: NavLink[] = [
   //   name: "Skills",
   //   href: "#skills",
   // },
+  // {
+  //   name: "Experience",
+  //   href: "#experience",
+  // },
   {
-    name: "Experience",
-    href: "#experience",
-  },
-  {
-    name: "Projects",
-    href: "#projects",
+    name: "Case Studies",
+    href: "#case-studies",
   },
   {
     name: "Contact",
@@ -31,7 +31,10 @@ export const navLinks: NavLink[] = [
 export const projectsData: Project[] = [
   {
     video: "assets/videos/chat-collector-demo.mp4",
+    img: "assets/images/stuvio.png",
     title: "Stuvio",
+    bgColor: "bg-white",
+    className: "bg-white w-[90%] h-auto object-cover object-center",
     subTitle: "Operations & SEO Growth",
     description:
       "Transforming team operations and digital presence for sustained growth",
@@ -43,7 +46,10 @@ export const projectsData: Project[] = [
   },
   {
     video: "assets/videos/magic-bento-demo.mp4",
+    img: "assets/images/mitl.avif",
     title: "MITL Digital Transformation",
+    bgColor: "bg-white",
+    className: "",
     subTitle: "Operations & SEO Growth",
     description:
       "Streamlining digital presence and enhancing client engagement for a logistics leader",
@@ -55,7 +61,10 @@ export const projectsData: Project[] = [
   },
   {
     video: "assets/videos/chat-collector-demo.mp4",
+    img: "assets/images/drone.avif",
+    bgColor: "bg-white",
     title: "RRP Drones",
+    className: "",
     subTitle: "Experience-Driven Website",
     description:
       "Creating an immersive digital experience through innovative scroll-based design",
@@ -67,7 +76,10 @@ export const projectsData: Project[] = [
   },
   {
     video: "assets/videos/magic-bento-demo.mp4",
+    img: "assets/images/electronics.avif",
     title: "RRP Electronics",
+    bgColor: "bg-black",
+    className: "w-auto h-full",
     subTitle: "Digital Platform Launch",
     description:
       "Orchestrating a multi-channel digital launch for consumer electronics",
@@ -79,7 +91,10 @@ export const projectsData: Project[] = [
   },
   {
     video: "assets/videos/chat-collector-demo.mp4",
+    img: "assets/images/defense.avif",
     title: "RRP Defense Website",
+    bgColor: "bg-white",
+    className: "h-full w-auto",
     subTitle: "Corporate Development",
     description:
       "Managing secure corporate website development with strict compliance requirements",
@@ -91,7 +106,10 @@ export const projectsData: Project[] = [
   },
   {
     video: "assets/videos/magic-bento-demo.mp4",
+    img: "assets/images/mm.png",
     title: "Magnetic Maharashtra",
+    bgColor: "bg-white",
+    className: "w-[90%] h-auto",
     subTitle: "Summit Website",
     description:
       "Delivering large-scale event platform for government investment summit",

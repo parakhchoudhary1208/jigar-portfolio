@@ -34,7 +34,7 @@ export default function HeroSection() {
           "absolute inset-0",
           "[mask-image:radial-gradient(400px_circle_at_center,white,transparent)]",
           "inset-x-0 inset-y-[-30%] h-[200%] skew-y-12",
-          "opacity-70"
+          "opacity-80"
         )}
       />
       <motion.div
@@ -63,7 +63,7 @@ export default function HeroSection() {
         className="font-heading max-w-3xl leading-[120%] text-4xl font-extrabold md:text-5xl"
       >
         Project Manager <br />
-        <span className="bg-gradient-to-r from-rose-700 to-pink-600 bg-clip-text text-transparent">
+        <span className="bg-gradient-to-tr from-[#0f8fff] to-[#d384fa] bg-clip-text text-transparent">
           Driving Digital Success
         </span>{" "}
       </motion.h1>

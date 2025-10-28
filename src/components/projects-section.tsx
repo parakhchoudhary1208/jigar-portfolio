@@ -1,11 +1,13 @@
-'use client'
+"use client";
 
-import { useSectionInView } from '@/hooks/use-section-in-view'
-import { projectsData } from '@/lib/data'
-import { motion } from 'framer-motion'
-import Link from 'next/link'
-import SectionHeading from './section-heading'
-import { Badge } from './ui/badge'
+import { useSectionInView } from "@/hooks/use-section-in-view";
+import { projectsData } from "@/lib/data";
+import { motion } from "framer-motion";
+import Link from "next/link";
+import { useEffect, useRef } from "react";
+import SectionHeading from "./section-heading";
+import { Badge } from "./ui/badge";
+import Image from "next/image";
 
 const fadeInAnimationVariants = {
   initial: {
@@ -19,32 +21,34 @@ const fadeInAnimationVariants = {
       delay: 0.1 * index,
     },
   }),
-}
+};
 
 export default function ProjectsSection() {
-  const { ref } = useSectionInView('Projects')
+  const { ref } = useSectionInView("Case Studies");
 
   return (
-    <section ref={ref} id="projects" className="my-10 scroll-mt-28 md:mb-20">
+    <section
+      ref={ref}
+      id="case-studies"
+      className="my-10 scroll-mt-28 md:mb-20"
+    >
       <motion.div
         initial={{ opacity: 0, y: 100 }}
-        whileInView={{
+        animate={{
           opacity: 1,
           y: 0,
         }}
         transition={{
           delay: 0.175,
-        }}
-        viewport={{
-          once: true,
+          ease: "easeOut",
         }}
       >
         <SectionHeading
-          heading="My Projects"
+          heading="Case Studies"
           content="Projects I worked on. Each of them containing its own case study."
         />
       </motion.div>
-      <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
+      <div className="grid grid-cols-1 gap-6 md:grid-cols-3">
         {projectsData.map((data, index) => (
           <motion.div
             key={data.title}
@@ -61,15 +65,13 @@ export default function ProjectsSection() {
               href={data.links.preview}
               aria-label={data.title}
               target="_blank"
-              className="overflow-hidden rounded"
+              className={`overflow-hidden ${data.bgColor}  rounded flex justify-center items-center aspect-video w-full`}
             >
-              <video
-                src={data.video}
-                autoPlay
-                loop
-                muted
-                playsInline
-                className="pointer-events-none mx-auto h-40 w-full object-cover object-top"
+              {/* <OptimizedVideo videoSrc={data.video} /> */}
+              <img
+                src={data.img}
+                alt={data.title}
+                className={`${data.className}`}
               />
             </Link>
             <h3 className="mt-4 text-xl font-medium">{data.title}</h3>
@@ -84,12 +86,63 @@ export default function ProjectsSection() {
                 </Badge>
                 ))}
                 </div> */}
-            <Badge  variant={'outline'} size={'lg'}>
+            <Badge variant={"outline"} size={"lg"}>
               Visit the Website
             </Badge>
           </motion.div>
         ))}
       </div>
     </section>
-  )
+  );
+}
+
+function OptimizedVideo({ videoSrc }: { videoSrc: string }) {
+  const videoRef = useRef<HTMLVideoElement>(null);
+  const observerRef = useRef<IntersectionObserver | null>(null);
+
+  useEffect(() => {
+    if (!videoRef.current) return;
+
+    // Create intersection observer to lazy load videos
+    observerRef.current = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting && videoRef.current) {
+            // Only play when in viewport
+            videoRef.current.play().catch((error) => {
+              console.warn("Video autoplay failed:", error);
+            });
+          } else if (videoRef.current) {
+            // Pause when out of viewport
+            videoRef.current.pause();
+          }
+        });
+      },
+      {
+        threshold: 0.5, // Trigger when 50% of video is visible
+        rootMargin: "50px", // Start loading slightly before entering viewport
+      }
+    );
+
+    observerRef.current.observe(videoRef.current);
+
+    return () => {
+      if (observerRef.current) {
+        observerRef.current.disconnect();
+      }
+    };
+  }, [videoSrc]);
+
+  return (
+    <video
+      ref={videoRef}
+      src={videoSrc}
+      loop
+      muted
+      playsInline
+      preload="none" // Don't preload videos to save bandwidth
+      className="pointer-events-none mx-auto aspect-video w-full object-cover object-top"
+      poster="" // Optional: add a poster image for better UX
+    />
+  );
 }

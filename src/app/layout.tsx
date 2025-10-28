@@ -4,6 +4,7 @@ import { siteConfig } from '@/lib/site-config'
 import { cn } from '@/lib/utils'
 import type { Metadata } from 'next'
 import { ThemeProvider } from 'next-themes'
+import { ReactLenis } from "lenis/react";
 import './globals.css'
 
 export const metadata: Metadata = {
@@ -19,9 +20,11 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body className={cn('min-h-screen font-sans', fonts)}>
-        <ThemeProvider attribute="class" defaultTheme="dark">
-          <ActionSectionProvider>{children}</ActionSectionProvider>
-        </ThemeProvider>
+        <ReactLenis root>
+          <ThemeProvider attribute="class" defaultTheme="dark">
+            <ActionSectionProvider>{children}</ActionSectionProvider>
+          </ThemeProvider>
+        </ReactLenis>
       </body>
     </html>
   )
