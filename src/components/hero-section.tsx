@@ -29,20 +29,21 @@ export default function HeroSection() {
           [2, 4],
           [6, 4],
         ]}
-        strokeDasharray={'4'}
+        strokeDasharray={"4"}
         className={cn(
-          'absolute inset-0',
-          '[mask-image:radial-gradient(400px_circle_at_center,white,transparent)]',
-          'inset-x-0 inset-y-[-30%] h-[200%] skew-y-12',
-          'opacity-70',
+          "absolute inset-0",
+          "[mask-image:radial-gradient(400px_circle_at_center,white,transparent)]",
+          "inset-x-0 inset-y-[-30%] h-[200%] skew-y-12",
+          "opacity-70"
         )}
       />
       <motion.div
         initial={{ opacity: 0, scale: 0 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{
-          type: 'tween',
+          type: "tween",
           duration: 0.2,
+          ease: "easeOut",
         }}
       >
         <Link
@@ -59,29 +60,30 @@ export default function HeroSection() {
       <motion.h1
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
-        className="font-heading max-w-3xl text-4xl font-extrabold md:text-5xl"
+        className="font-heading max-w-3xl leading-[120%] text-4xl font-extrabold md:text-5xl"
       >
-        I'm a{' '}
+        Project Manager <br />
         <span className="bg-gradient-to-r from-rose-700 to-pink-600 bg-clip-text text-transparent">
-          Creative Frontend
-        </span>{' '}
-        developer crafting modern digital experiences.
+          Driving Digital Success
+        </span>{" "}
       </motion.h1>
       <motion.p
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{
           delay: 0.1,
+          ease: "easeOut",
         }}
         className="text-muted-foreground max-w-xl"
       >
-        You have a project in mind? Let's talk about it!
+        Project Coordinator- Certified Scrum Master | 5+ Years of experience
       </motion.p>
       <motion.div
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{
           delay: 0.1,
+          ease: "easeOut",
         }}
         className="flex flex-row gap-2 items-center"
       >
@@ -104,7 +106,7 @@ export default function HeroSection() {
             <Icons.linkedin className="size-5" />
           </Link>
         </Button>
-        <Button variant="outline" size="icon" asChild>
+        {/* <Button variant="outline" size="icon" asChild>
           <Link
             href={siteConfig.links.github}
             aria-label="Github"
@@ -112,8 +114,8 @@ export default function HeroSection() {
           >
             <Icons.github className="size-5" />
           </Link>
-        </Button>
+        </Button> */}
       </motion.div>
     </section>
-  )
+  );
 }

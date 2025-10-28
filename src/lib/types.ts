@@ -5,8 +5,9 @@ export type SectionName = (typeof navLinks)[number]['name']
 export type Project = {
   video: string
   title: string
+  subTitle: string
   description: string
-  technologies: string[]
+  // technologies: string[]
   links: {
     preview: string
     github: string
@@ -19,7 +20,7 @@ export type Experience = {
   company: string
   description: string
   period: string
-  technologies: string[]
+  // technologies: string[]
 }
 
 export type NavName = 'Home' | 'About' | 'Experience' | 'Projects' | 'Contact'
@@ -31,6 +32,5 @@ export type NavLink = {
 
 export type Skill = {
   name: string
-  icon: React.ReactNode
 }
 

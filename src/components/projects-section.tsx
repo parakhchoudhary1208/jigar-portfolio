@@ -58,7 +58,7 @@ export default function ProjectsSection() {
             className="flex flex-col rounded border p-4 cursor-pointer"
           >
             <Link
-              href={data.links.github}
+              href={data.links.preview}
               aria-label={data.title}
               target="_blank"
               className="overflow-hidden rounded"
@@ -73,16 +73,20 @@ export default function ProjectsSection() {
               />
             </Link>
             <h3 className="mt-4 text-xl font-medium">{data.title}</h3>
+            <h3 className="mt-4 text-[16px] font-medium">{data.subTitle}</h3>
             <p className="text-muted-foreground mb-4 mt-1">
               {data.description}
             </p>
-            <div className="flex flex-wrap gap-2">
+            {/* <div className="flex flex-wrap gap-2">
               {data.technologies.map((tech) => (
                 <Badge key={tech} variant={'outline'} size={'lg'}>
                   {tech}
                 </Badge>
-              ))}
-            </div>
+                ))}
+                </div> */}
+            <Badge  variant={'outline'} size={'lg'}>
+              Visit the Website
+            </Badge>
           </motion.div>
         ))}
       </div>

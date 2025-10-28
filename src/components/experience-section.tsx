@@ -1,5 +1,5 @@
 'use client'
-
+import React from 'react'
 import { useSectionInView } from '@/hooks/use-section-in-view'
 import { experiencesData } from '@/lib/data'
 import { cn } from '@/lib/utils'
@@ -20,7 +20,7 @@ export default function ExperienceSection() {
       <div className="relative max-w-screen-md">
         {experiencesData.map((data) => (
           <div
-            key={data.title}
+            key={`${data.title}-${data.company}`}
             className="not-last:pb-12 relative pl-8 [&:not(:last-child)]:pb-10"
           >
             <div className="bg-muted absolute left-0 top-2.5 h-full w-[2px] group-first:top-6 group-first:h-[calc(100%-24px)]">
@@ -34,11 +34,12 @@ export default function ExperienceSection() {
               }}
               transition={{
                 delay: 0.175,
+                ease: "easeOut",
               }}
               viewport={{
                 once: true,
               }}
-              className={cn('space-y-3 opacity-0')}
+              className={cn("space-y-3 opacity-0")}
             >
               <div className="flex items-center gap-3">
                 <div className="flex size-9 shrink-0 items-center justify-center rounded-full border">
@@ -47,24 +48,31 @@ export default function ExperienceSection() {
                 <span className="text-lg font-semibold">{data.company}</span>
               </div>
               <div>
-                <h3 className="text-xl font-medium">{data.title}</h3>
-                <div className="mt-1 flex items-center gap-2 text-sm">
+                <h3 className="text-xl font-medium mb-3">{data.title}</h3>
+                <div className="mt-1 flex items-center gap-2 text-sm mb-4.5">
                   <Icons.calendar className="size-4" />
                   <span>{data.period}</span>
                 </div>
               </div>
-              <p className="text-muted-foreground">{data.description}</p>
-              <div className="flex flex-wrap gap-2">
+              <p className="text-muted-foreground">
+                {data.description.split("\n").map((line, i) => (
+                  <React.Fragment key={i}>
+                    {line}
+                    <br />
+                  </React.Fragment>
+                ))}
+              </p>
+              {/* <div className="flex flex-wrap gap-2">
                 {data.technologies.map((tech) => (
                   <Badge key={tech} variant={'outline'} size={'lg'}>
                     {tech}
                   </Badge>
                 ))}
-              </div>
+              </div> */}
             </motion.div>
           </div>
         ))}
       </div>
     </section>
-  )
+  );
 }

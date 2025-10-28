@@ -20,7 +20,7 @@ const fadeInAnimationVariants = {
 export default function Skills() {
   return (
     <div className="mt-10 flex w-full flex-wrap justify-center gap-10 px-5 sm:px-0 md:mt-14 lg:justify-between">
-      {skillsData.map(({ name, icon }, index) => (
+      {skillsData.map(({ name }, index) => (
         <motion.div
           key={name}
           variants={fadeInAnimationVariants}
@@ -31,7 +31,6 @@ export default function Skills() {
           }}
           custom={index}
         >
-          {icon}
         </motion.div>
       ))}
     </div>

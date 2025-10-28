@@ -1,13 +1,13 @@
 import { env } from '@/env.mjs'
 
 export const siteConfig = {
-  name: 'John Doe',
-  title: 'John Doe | Front-end developer',
+  name: 'Jigar Chheda',
+  title: 'Jigar Chheda | Project Manager & Cordinator',
   description:
-    "Hello, I'm John. I am front-end developer from Poland. I enjoy building sites and apps. My focus is React (Next.js).",
+    "I'm Jigar Chheda, a Project and Operations Manager with 4+ years of experience in managing cross-functional teams, delivering digital projects, and improving operational efficiency. With expertise in Agile, Scrum, and tools like Jira, Trello, GanttPro, and Zoho Projects, I ensure smooth execution and measurable results.",
   keywords: [
-    'John Doe',
-    'Front-end developer',
+    'Jigar Chheda',
+    'Project Manager & Cordinator',
     'Poland',
     'React',
     'Next.js',
@@ -27,19 +27,19 @@ export const siteConfig = {
     'Programming',
     'Tech enthusiast',
   ],
-  creator: 'Build With Sohail',
+  creator: 'Jigar Chheda',
   url: '#',
   contact: {
-    email: 'john@doe.com',
-    linkedin: '#',
+    email: 'jigarc8@gmail.com',
+    linkedin: 'http://linkedin.com/in/jigar-chheda-b22882124/',
     github: '#',
   },
   links: {
     contactForm: '/#contact',
-    linkedin: '#',
+    linkedin: 'http://linkedin.com/in/jigar-chheda-b22882124/',
     github: '#',
-    mailTo: 'mailto:john@doe.com',
-    cvPdf: '/john-doe-cv.pdf',
-    sohailYoutube: 'https://www.youtube.com/@buildwithsohail',
+    mailTo: 'mailto:jigarc8@gmail.com',
+    cvPdf: '/jigar-chheda-resume.pdf',
+    jigarLinkedIn: 'http://linkedin.com/in/jigar-chheda-b22882124/',
   },
 }

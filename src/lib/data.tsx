@@ -3,109 +3,147 @@ import { Experience, NavLink, Project, Skill } from './types'
 
 export const navLinks: NavLink[] = [
   {
-    name: 'Home',
-    href: '#home',
+    name: "Home",
+    href: "#home",
   },
   {
-    name: 'About',
-    href: '#about',
+    name: "About",
+    href: "#about",
+  },
+  // {
+  //   name: "Skills",
+  //   href: "#skills",
+  // },
+  {
+    name: "Experience",
+    href: "#experience",
   },
   {
-    name: 'Experience',
-    href: '#experience',
+    name: "Projects",
+    href: "#projects",
   },
   {
-    name: 'Projects',
-    href: '#projects',
+    name: "Contact",
+    href: "#contact",
   },
-  {
-    name: 'Contact',
-    href: '#contact',
-  },
-]
+];
 
 export const projectsData: Project[] = [
   {
-    video: 'assets/videos/chat-collector-demo.mp4',
-    title: 'Chat Collector Pro',
+    video: "assets/videos/chat-collector-demo.mp4",
+    title: "Stuvio",
+    subTitle: "Operations & SEO Growth",
     description:
-      'A comprehensive chat collector application built with React and Node.js, featuring real-time collaboration, project tracking, and team management capabilities.',
-    technologies: [
-      'React.js',
-      'Node.js',
-      'MongoDB',
-      'Socket.io',
-      'Material-UI',
-    ],
+      "Transforming team operations and digital presence for sustained growth",
     links: {
-      preview: '#',
-      github: '#',
-      githubApi: '#',
+      preview: "https://www.stuvio.co",
+      github: "#",
+      githubApi: "#",
     },
   },
   {
-    video: 'assets/videos/magic-bento-demo.mp4',
-    title: 'Magic Bento Box',
+    video: "assets/videos/magic-bento-demo.mp4",
+    title: "MITL Digital Transformation",
+    subTitle: "Operations & SEO Growth",
     description:
-      'Magic Bento Box is a platform for creating and sharing magic recipes that can be used in the game.',
-    technologies: [
-      'Next.js',
-      'TypeScript',
-      'Express.js',
-      'PostgreSQL',
-      'Stripe',
-    ],
+      "Streamlining digital presence and enhancing client engagement for a logistics leader",
     links: {
-      preview: '#',
-      github: '#',
-      githubApi: '#',
+      preview: "https://www.mitl.org.in",
+      github: "#",
+      githubApi: "#",
     },
   },
-] as const
+  {
+    video: "assets/videos/chat-collector-demo.mp4",
+    title: "RRP Drones",
+    subTitle: "Experience-Driven Website",
+    description:
+      "Creating an immersive digital experience through innovative scroll-based design",
+    links: {
+      preview: "https://www.rrpdrones.com",
+      github: "#",
+      githubApi: "#",
+    },
+  },
+  {
+    video: "assets/videos/magic-bento-demo.mp4",
+    title: "RRP Electronics",
+    subTitle: "Digital Platform Launch",
+    description:
+      "Orchestrating a multi-channel digital launch for consumer electronics",
+    links: {
+      preview: "https://www.rrpelectronics.com",
+      github: "#",
+      githubApi: "#",
+    },
+  },
+  {
+    video: "assets/videos/chat-collector-demo.mp4",
+    title: "RRP Defense Website",
+    subTitle: "Corporate Development",
+    description:
+      "Managing secure corporate website development with strict compliance requirements",
+    links: {
+      preview: "https://www.rrpdefense.com",
+      github: "#",
+      githubApi: "#",
+    },
+  },
+  {
+    video: "assets/videos/magic-bento-demo.mp4",
+    title: "Magnetic Maharashtra",
+    subTitle: "Summit Website",
+    description:
+      "Delivering large-scale event platform for government investment summit",
+    links: {
+      preview: "https://www.mm-opal.vercel.app",
+      github: "#",
+      githubApi: "#",
+    },
+  },
+] as const;
 
 export const experiencesData: Experience[] = [
   {
-    title: 'Software Engineer',
-    company: 'CloudTech Ventures, remote',
+    title: "Project Coordinator",
+    company: "Stuvio Digital",
     description:
-      'Currently developing scalable cloud-based applications and microservices. Responsible for architecting solutions, code reviews, and mentoring junior developers in best practices.',
-    period: '2023 Jul - present',
-    technologies: ['React', 'TypeScript', 'AWS', 'GraphQL', 'Kubernetes'],
+      "Delivered 10+ digital projects across technology, logistics, real estate, education, and service industries, tailoring strategies to client goals and user needs. \n\n Collaborated with UI/UX designers, developers, and SEO specialists to create user-centric digital experiences and optimize product performance \n\n Led AI-driven product initiatives, managing timelines, features, and user journeys for tools like Brello and other automation-based applications \n\n Oversaw operations and resource planning, including workflow optimisation, software management, and technical troubleshooting \n\n Contributed to SEO growth for Stuvio and its clients, improving organic traffic by 80%+ and achieving top-page Google rankings for multiple high-competition keywords, resulting in measurable performance gains.",
+    period: "Aug 2025 – Present",
+    // technologies: ['React', 'TypeScript', 'AWS', 'GraphQL', 'Kubernetes'],
   },
   {
-    title: 'Backend Developer Intern',
-    company: 'DataFlow Systems, remote',
+    title: "Project Coordinator",
+    company: "Boppo Technologies",
     description:
-      'Assisted in developing RESTful APIs and database optimization. Gained experience in agile development methodologies and collaborated with senior developers on complex projects.',
-    period: '2023 Jan - 2023 Jul',
-    technologies: ['Java', 'Spring Boot', 'MySQL', 'Redis'],
+      "Acted as the primary point of contact for key clients, ensuring clear communication and satisfaction. \n\n Led web app and UI/UX design projects across healthcare, entertainment, and quick commerce sectors.",
+    period: "June 2024 - Aug 2024",
+    // technologies: ['Java', 'Spring Boot', 'MySQL', 'Redis'],
   },
   {
-    title: 'Full Stack Developer',
-    company: 'Digital Innovations, remote',
+    title: "Project Executive",
+    company: "Bombay Design Centre",
     description:
-      'Built responsive web applications from concept to deployment. Worked with clients to understand requirements and delivered custom solutions that exceeded expectations.',
-    period: '2022 Jul - 2022 Dec',
-    technologies: ['Vue.js', 'Python', 'PostgreSQL', 'Docker'],
+      "Managed large-scale digital and SEO projects for Shapoorji Pallonji Group, Kokuyo Camlin, Sterling and Wilson, Joyville Homes, and Shapoorji Real Estate, delivering design-driven solutions that aligned with business objectives and enhanced online visibility. \n\n Monitored account performance, analyzed trends, and implemented improvements. \n\n Coordinated with vendors and internal teams, ensuring timely project delivery and iterative improvements. \n\n Worked closely with cross-functional teams, bridging design, technology, and business to deliver seamless digital experiences.",
+    period: "2022 Jan - 2022 Jul",
+    // technologies: ['React', 'Node.js', 'MongoDB', 'Express'],
   },
   {
-    title: 'Junior Software Engineer',
-    company: 'TechCorp Solutions, San Francisco CA',
+    title: "Founder & Project Lead",
+    company: "Hitech Coders",
     description:
-      'Developed and maintained web applications using modern JavaScript frameworks. Collaborated with cross-functional teams to deliver high-quality software solutions.',
-    period: '2022 Jan - 2022 Jul',
-    technologies: ['React', 'Node.js', 'MongoDB', 'Express'],
+      "Founded and managed a digital solutions startup delivering high-impact projects across multiple industries. \n\n Led end-to-end project delivery from requirement gathering and PRD creation to supervising UI/UX and development for timely execution. \n\n Built and maintained strong client relationships through strategic guidance and proactive problem-solving. \n\n Oversaw operations including budgeting, resource allocation, and technical troubleshooting to maintain delivery standards.",
+    period: "June 2019 - June 2022",
+    // technologies: ['React', 'Node.js', 'MongoDB', 'Express'],
   },
-]
+];
 
 export const skillsData: Skill[] = [
-  { name: 'Sass', icon: <Icons.sass className="size-12" /> },
-  { name: 'Tailwind', icon: <Icons.tailwind className="size-12" /> },
-  { name: 'JavaScript', icon: <Icons.javascript className="size-12" /> },
-  { name: 'TypeScript', icon: <Icons.typescript className="size-12" /> },
-  { name: 'React', icon: <Icons.react className="size-12" /> },
-  { name: 'NextJS', icon: <Icons.nextjs className="size-12" /> },
-  { name: 'NestJS', icon: <Icons.nestjs className="size-12" /> },
-  { name: 'Prisma', icon: <Icons.prisma className="size-12" /> },
-  { name: 'Docker', icon: <Icons.docker className="size-12" /> },
-]
+  { name: "Jira" },
+  { name: "Trello" },
+  { name: "GanttPro" },
+  { name: "Zoho Projects" },
+  { name: "Slack" },
+  { name: "Microsoft Project" },
+  { name: "Google Workspace" }
+];
