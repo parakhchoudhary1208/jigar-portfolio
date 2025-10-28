@@ -45,7 +45,7 @@ export default function ProjectsSection() {
       >
         <SectionHeading
           heading="Case Studies"
-          content="Projects I worked on. Each of them containing its own case study."
+          content="Projects I’ve managed, each highlighting unique challenges and outcomes."
         />
       </motion.div>
       <div className="grid grid-cols-1 gap-6 md:grid-cols-3">

@@ -110,7 +110,7 @@ export default function AboutSection() {
                 key={category.title}
                 className={`
                   flex flex-col justify-between gap-10 rounded-xl border 
-                  bg-gradient-to-br p-5 md:p-6 shadow-md 
+                  bg-gradient-to-br p-5 md:p-6
                   backdrop-blur-md
                   border-foreground/10
                   from-foreground/5

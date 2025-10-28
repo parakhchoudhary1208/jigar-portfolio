@@ -108,13 +108,13 @@ export const projectsData: Project[] = [
     video: "assets/videos/magic-bento-demo.mp4",
     img: "assets/images/mm.png",
     title: "Magnetic Maharashtra",
-    bgColor: "bg-white",
+    bgColor: "bg-[#fff]",
     className: "w-[90%] h-auto",
     subTitle: "Summit Website",
     description:
       "Delivering large-scale event platform for government investment summit",
     links: {
-      preview: "https://www.mm-opal.vercel.app",
+      preview: "https://mm-opal.vercel.app",
       github: "#",
       githubApi: "#",
     },
