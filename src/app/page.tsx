@@ -1,6 +1,5 @@
 import AboutSection from '@/components/about-section'
 import ContactSection from '@/components/contact-section'
-import ExperienceSection from '@/components/experience-section'
 import Footer from '@/components/footer'
 import Header from '@/components/header'
 import HeroSection from '@/components/hero-section'
