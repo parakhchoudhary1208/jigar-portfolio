@@ -39,7 +39,7 @@ export const siteConfig = {
     linkedin: 'http://linkedin.com/in/jigar-chheda-b22882124/',
     github: '#',
     mailTo: 'mailto:jigarc8@gmail.com',
-    cvPdf: '/jigar-chheda-resume.pdf',
+    cvPdf: '/jigar-chheda.pdf',
     jigarLinkedIn: 'http://linkedin.com/in/jigar-chheda-b22882124/',
   },
 }
