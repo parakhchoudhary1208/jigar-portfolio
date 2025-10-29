@@ -15,7 +15,7 @@ export default function HeroSection() {
     <section
       ref={ref}
       id="home"
-      className="relative flex flex-col items-center justify-center gap-5 text-center h-dvh"
+      className="relative flex flex-col items-center justify-center gap-5 text-center h-[80vh]"
     >
       <GridPattern
         width={80}
