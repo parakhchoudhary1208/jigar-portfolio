@@ -10,7 +10,7 @@ export type Project = {
   bgColor: string
   subTitle: string
   description: string
-  result: { percent?: string; text: string }[]
+  result?: { percent?: string; text?: string }[]
   // technologies: string[]
   links: {
     preview: string

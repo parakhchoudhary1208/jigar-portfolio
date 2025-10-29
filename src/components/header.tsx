@@ -25,7 +25,7 @@ export default function Header() {
     <motion.header
       initial={{ y: -100, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
-      className="sticky top-5 z-20 my-5 sm:top-10 sm:my-10"
+      className="fixed top-5 z-20 sm:top-10 left-1/2 -translate-x-1/2"
     >
       {/* Mobile Navbar */}
       <div className="sm:hidden flex items-center gap-2 justify-center">

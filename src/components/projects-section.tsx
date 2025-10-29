@@ -59,39 +59,44 @@ export default function ProjectsSection() {
               once: true,
             }}
             custom={index}
-            className="flex flex-col rounded border p-4 cursor-pointer"
+            className="flex flex-col justify-between rounded border p-4 cursor-pointer"
           >
-            <Link
-              href={data.links.preview}
-              aria-label={data.title}
-              target="_blank"
-              className={`overflow-hidden ${data.bgColor}  rounded flex justify-center items-center aspect-video w-full`}
-            >
-              {/* <OptimizedVideo videoSrc={data.video} /> */}
-              <img
-                src={data.img}
-                alt={data.title}
-                className={`${data.className}`}
-              />
-            </Link>
-            <h3 className="mt-4 mb-2 text-xl font-medium">{data.title}</h3>
-            {/* <h3 className="mt-4 text-[16px] font-medium">{data.subTitle}</h3> */}
-            <p className="text-muted-foreground mb-2.5 mt-1">
-              {data.description}
-            </p>
-            <ul className="text-muted-foreground mb-5 mt-2.5 text-sm flex justify-evenly items-center">
-              {data.result.map((res, index) => (
-                <React.Fragment key={index}>
-                  <li className="w-[45%] flex flex-col justify-center items-center text-center">
-                    {res.percent && <p>{res.percent}</p>}
-                    <p>{res.text}</p>
-                  </li>
-                  {index !== data.result.length - 1 && (
-                    <li className="w-0.5 h-10 bg-muted"></li>
-                  )}
-                </React.Fragment>
-              ))}
-            </ul>
+            <div className="flex flex-col">
+              <Link
+                href={data.links.preview}
+                aria-label={data.title}
+                target="_blank"
+                className={`overflow-hidden ${data.bgColor}  rounded flex justify-center items-center aspect-video w-full`}
+              >
+                {/* <OptimizedVideo videoSrc={data.video} /> */}
+                <img
+                  src={data.img}
+                  alt={data.title}
+                  className={`${data.className}`}
+                />
+              </Link>
+              <h3 className="mt-4 mb-2 text-xl font-medium">{data.title}</h3>
+              {/* <h3 className="mt-4 text-[16px] font-medium">{data.subTitle}</h3> */}
+              <p className="text-muted-foreground mb-2.5 mt-1">
+                {data.description}
+              </p>
+              {data.result?.length ? (
+                <ul className="text-muted-foreground mb-5 mt-2.5 text-sm gap-6 flex justify-start items-center">
+                  {data.result.map((res, index) => (
+                    <React.Fragment key={index}>
+                      <li className="w-[45%] flex flex-col justify-center items-start text-center">
+                        {res.percent && <p>{res.percent}</p>}
+                        <p>{res.text}</p>
+                      </li>
+                      {index !== (data.result?.length ?? 0) - 1 && (
+                        <li className="w-0.5 h-10 bg-muted"></li>
+                      )}
+                    </React.Fragment>
+                  ))}
+                </ul>
+              ) : null}
+            </div>
+
             {/* <div className="flex flex-wrap gap-2">
               {data.technologies.map((tech) => (
                 <Badge key={tech} variant={'outline'} size={'lg'}>
