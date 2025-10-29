@@ -21,7 +21,7 @@ export default function SectionHeading({ heading, content }: Props) {
           style={{
             fontSize: "clamp(1rem, 0.951rem + 0.22vw, 1.125rem)",
           }}
-          className="text-muted-foreground mt-3 text-sm max-w-2xl"
+          className="text-muted-foreground mt-3 text-sm max-w-[580px] mx-auto"
         >
           {content}
         </p>
