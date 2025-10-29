@@ -10,14 +10,6 @@ export const navLinks: NavLink[] = [
     name: "About",
     href: "#about",
   },
-  // {
-  //   name: "Skills",
-  //   href: "#skills",
-  // },
-  // {
-  //   name: "Experience",
-  //   href: "#experience",
-  // },
   {
     name: "Case Studies",
     href: "#case-studies",
@@ -36,6 +28,10 @@ export const projectsData: Project[] = [
     bgColor: "bg-white",
     className: "bg-white w-[90%] h-auto object-cover object-center",
     subTitle: "Operations & SEO Growth",
+    result: [
+      { percent: "80%", text: "Organic Growth" },
+      { percent: "40%", text: "Team Efficiency" },
+    ],
     description:
       "Transforming team operations and digital presence for sustained growth",
     links: {
@@ -50,9 +46,13 @@ export const projectsData: Project[] = [
     title: "MITL Digital Transformation",
     bgColor: "bg-white",
     className: "",
-    subTitle: "Operations & SEO Growth",
+    subTitle: "Industrial Township Platform",
+    result: [
+      { percent: "65%", text: "User Engagement" },
+      { percent: "30%", text: "Faster Response" },
+    ],
     description:
-      "Streamlining digital presence and enhancing client engagement for a logistics leader",
+      "Streamlining digital presence and enhancing stakeholder engagement for a state-led industrial township",
     links: {
       preview: "https://www.mitl.org.in",
       github: "#",
@@ -66,6 +66,10 @@ export const projectsData: Project[] = [
     title: "RRP Drones",
     className: "",
     subTitle: "Experience-Driven Website",
+    result: [
+      { percent: "2×", text: "User Engagement" },
+      { percent: "45%", text: "Demo Signups" },
+    ],
     description:
       "Creating an immersive digital experience through innovative scroll-based design",
     links: {
@@ -81,8 +85,9 @@ export const projectsData: Project[] = [
     bgColor: "bg-black",
     className: "w-auto h-full",
     subTitle: "Digital Platform Launch",
+    result: [{ percent: "120%", text: "User Acquisition" }],
     description:
-      "Orchestrating a multi-channel digital launch for consumer electronics",
+      "Orchestrated a multi-channel digital launch for consumer electronics.",
     links: {
       preview: "https://www.rrpelectronics.com",
       github: "#",
@@ -95,9 +100,10 @@ export const projectsData: Project[] = [
     title: "RRP Defense Website",
     bgColor: "bg-white",
     className: "h-full w-auto",
-    subTitle: "Corporate Development",
+    subTitle: "Corporate Website",
+    result: [{ percent: "100%", text: "On-Time Delivery" }],
     description:
-      "Managing secure corporate website development with strict compliance requirements",
+      "Developed a secure and modern business website to strengthen brand credibility and client communication.",
     links: {
       preview: "https://www.rrpdefense.com",
       github: "#",
@@ -111,8 +117,9 @@ export const projectsData: Project[] = [
     bgColor: "bg-[#fff]",
     className: "w-[90%] h-auto",
     subTitle: "Summit Website",
+    result: [{ text: "In Development" }],
     description:
-      "Delivering large-scale event platform for government investment summit",
+      "Currently in final development phase — focused on performance, scalability, and user experience for the upcoming launch.",
     links: {
       preview: "https://mm-opal.vercel.app",
       github: "#",
@@ -120,6 +127,7 @@ export const projectsData: Project[] = [
     },
   },
 ] as const;
+
 
 export const experiencesData: Experience[] = [
   {
