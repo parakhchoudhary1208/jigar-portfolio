@@ -3,7 +3,6 @@ import { navLinks } from '@/lib/data'
 export type SectionName = (typeof navLinks)[number]['name']
 
 export type Project = {
-  video: string
   img: string
   title: string
   className: string
@@ -11,7 +10,6 @@ export type Project = {
   subTitle: string
   description: string
   result?: { percent?: string; text?: string }[]
-  // technologies: string[]
   links: {
     preview: string
     github: string

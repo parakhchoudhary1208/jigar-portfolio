@@ -104,7 +104,7 @@ export default function ProjectsSection() {
                 </Badge>
                 ))}
               </div> */}
-            <Badge variant={"outline"} size={"lg"}>
+            <Badge link={`${data.links.preview}`} variant={"outline"} size={"lg"}>
               Visit the Website
             </Badge>
           </motion.div>

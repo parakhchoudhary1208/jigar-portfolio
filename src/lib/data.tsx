@@ -22,7 +22,6 @@ export const navLinks: NavLink[] = [
 
 export const projectsData: Project[] = [
   {
-    video: "assets/videos/chat-collector-demo.mp4",
     img: "assets/images/stuvio.png",
     title: "Stuvio",
     bgColor: "bg-white",
@@ -41,7 +40,6 @@ export const projectsData: Project[] = [
     },
   },
   {
-    video: "assets/videos/magic-bento-demo.mp4",
     img: "assets/images/mitl.avif",
     title: "MITL Digital Transformation",
     bgColor: "bg-white",
@@ -60,7 +58,24 @@ export const projectsData: Project[] = [
     },
   },
   {
-    video: "assets/videos/chat-collector-demo.mp4",
+    img: "assets/images/camlin.webp",
+    title: "Kokuyo Camlin",
+    bgColor: "bg-white",
+    className: "scale-y-90",
+    subTitle: "Industrial Township Platform",
+    result: [
+      { percent: "8.5L+", text: "Visitors in 4 months" },
+      { percent: "153%", text: "YoY increase in active users" },
+    ],
+    description:
+      "Working together, we built a first-of-its-kind artist platform that blends a vibrant community space with an e-commerce store.",
+    links: {
+      preview: "https://www.kokuyocamlin.com/camel/",
+      github: "#",
+      githubApi: "#",
+    },
+  },
+  {
     img: "assets/images/drone.avif",
     bgColor: "bg-white",
     title: "RRP Drones",
@@ -79,7 +94,6 @@ export const projectsData: Project[] = [
     },
   },
   {
-    video: "assets/videos/magic-bento-demo.mp4",
     img: "assets/images/electronics.avif",
     title: "RRP Electronics",
     bgColor: "bg-black",
@@ -95,7 +109,6 @@ export const projectsData: Project[] = [
     },
   },
   {
-    video: "assets/videos/chat-collector-demo.mp4",
     img: "assets/images/defense.avif",
     title: "RRP Defense Website",
     bgColor: "bg-white",
@@ -111,13 +124,27 @@ export const projectsData: Project[] = [
     },
   },
   {
-    video: "assets/videos/magic-bento-demo.mp4",
+    img: "assets/images/shapoorji.png",
+    title: "Shapoorji Pallonji",
+    bgColor: "bg-[#fff]",
+    className: "h-full w-auto",
+    subTitle: "Real Estate",
+    // result: [{ text: "In Development" }],
+    description:
+      "Building a seamless digital experience for modern real estate exploration.",
+    links: {
+      preview: "https://www.shapoorjipallonji.com/",
+      github: "#",
+      githubApi: "#",
+    },
+  },
+  {
     img: "assets/images/mm.png",
     title: "Magnetic Maharashtra",
     bgColor: "bg-[#fff]",
     className: "w-[90%] h-auto",
     subTitle: "Summit Website",
-    // result: [{ text: "In Development" }],
+    result: [{ percent: "2.3x", text: "Increase in leads " }],
     description:
       "Currently in final development phase — focused on performance, scalability, and user experience for the upcoming launch.",
     links: {
