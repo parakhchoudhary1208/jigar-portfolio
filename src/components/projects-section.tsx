@@ -45,7 +45,7 @@ export default function ProjectsSection() {
       >
         <SectionHeading
           heading="Case Studies"
-          content="Projects I’ve managed, each highlighting unique challenges and outcomes."
+          content="Here are some of my most recent digital transformation and website projects. Over the years, I’ve successfully managed and delivered numerous initiatives across industries — driving measurable business impact through strategy, design, and execution."
         />
       </motion.div>
       <div className="grid grid-cols-1 gap-6 md:grid-cols-3">
