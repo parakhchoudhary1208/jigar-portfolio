@@ -84,7 +84,7 @@ export default function ProjectsSection() {
                 <ul className="text-muted-foreground mb-5 mt-2.5 text-sm gap-6 flex justify-start items-center">
                   {data.result.map((res, index) => (
                     <React.Fragment key={index}>
-                      <li className="w-[45%] flex flex-col justify-center items-start text-center">
+                      <li className="w-[45%] flex flex-col justify-center items-start">
                         {res.percent && <p>{res.percent}</p>}
                         <p>{res.text}</p>
                       </li>

@@ -15,7 +15,7 @@ export default function HeroSection() {
     <section
       ref={ref}
       id="home"
-      className="relative flex flex-col items-center justify-center gap-5 text-center h-[90vh] sm:h-dvh"
+      className="relative flex flex-col items-center justify-center gap-5 text-center h-[86vh] sm:h-dvh"
     >
       <GridPattern
         width={80}
@@ -76,7 +76,7 @@ export default function HeroSection() {
         }}
         className="text-muted-foreground max-w-xl"
       >
-        Project Coordinator- Certified Scrum Master | 5+ Years of experience
+        Project Coordinator- Certified Scrum Master <br/> 5+ Years of experience
       </motion.p>
       <motion.div
         initial={{ opacity: 0, y: 100 }}

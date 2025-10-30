@@ -129,11 +129,11 @@ export const projectsData: Project[] = [
     bgColor: "bg-[#fff]",
     className: "h-full w-auto",
     subTitle: "Real Estate",
-    // result: [{ text: "In Development" }],
+    result: [{ percent: "2.3x", text: "Increase in leads " }],
     description:
       "Building a seamless digital experience for modern real estate exploration.",
     links: {
-      preview: "https://www.shapoorjipallonji.com/",
+      preview: "https://www.shapoorjirealestate.com/",
       github: "#",
       githubApi: "#",
     },
@@ -144,7 +144,6 @@ export const projectsData: Project[] = [
     bgColor: "bg-[#fff]",
     className: "w-[90%] h-auto",
     subTitle: "Summit Website",
-    result: [{ percent: "2.3x", text: "Increase in leads " }],
     description:
       "Currently in final development phase — focused on performance, scalability, and user experience for the upcoming launch.",
     links: {
