@@ -41,8 +41,7 @@ export default function ContactSection() {
               <Link href={siteConfig.links.mailTo}>
                 {siteConfig.contact.email}
               </Link>
-            </Button>{" "}
-            or through this form.
+            </Button>.
           </>
         }
       />
