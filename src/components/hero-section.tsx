@@ -62,7 +62,7 @@ export default function HeroSection() {
         animate={{ opacity: 1, y: 0 }}
         className="font-heading max-w-3xl leading-[120%] text-4xl font-extrabold md:text-5xl"
       >
-        Project Manager <br />
+        Project Lead <br />
         <span className="bg-gradient-to-tr from-[#0f8fff] to-[#d384fa] bg-clip-text text-transparent">
           Driving Digital Success
         </span>{" "}
@@ -76,7 +76,7 @@ export default function HeroSection() {
         }}
         className="text-muted-foreground max-w-xl"
       >
-        Project Coordinator - Certified Scrum Master <br/> 5+ Years of experience
+        Project Lead - Certified Scrum Master <br/> 5+ Years of experience
       </motion.p>
       <motion.div
         initial={{ opacity: 0, y: 100 }}

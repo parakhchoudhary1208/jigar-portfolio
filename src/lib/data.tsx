@@ -157,7 +157,7 @@ export const projectsData: Project[] = [
 
 export const experiencesData: Experience[] = [
   {
-    title: "Project Coordinator",
+    title: "Project Lead",
     company: "Stuvio Digital",
     description:
       "Delivered 10+ digital projects across technology, logistics, real estate, education, and service industries, tailoring strategies to client goals and user needs. \n\n Collaborated with UI/UX designers, developers, and SEO specialists to create user-centric digital experiences and optimize product performance \n\n Led AI-driven product initiatives, managing timelines, features, and user journeys for tools like Brello and other automation-based applications \n\n Oversaw operations and resource planning, including workflow optimisation, software management, and technical troubleshooting \n\n Contributed to SEO growth for Stuvio and its clients, improving organic traffic by 80%+ and achieving top-page Google rankings for multiple high-competition keywords, resulting in measurable performance gains.",
@@ -165,7 +165,7 @@ export const experiencesData: Experience[] = [
     // technologies: ['React', 'TypeScript', 'AWS', 'GraphQL', 'Kubernetes'],
   },
   {
-    title: "Project Coordinator",
+    title: "Project Lead",
     company: "Boppo Technologies",
     description:
       "Acted as the primary point of contact for key clients, ensuring clear communication and satisfaction. \n\n Led web app and UI/UX design projects across healthcare, entertainment, and quick commerce sectors.",
